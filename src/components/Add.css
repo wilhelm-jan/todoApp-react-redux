@@ -2,7 +2,7 @@
   height: 50px;
   width: 65%;
   border-radius: 12px;
-  background-color: rgba(55, 146, 255, 0.4);
+  background-color: #04daf6;
   color: #000;
   display: flex;
   justify-content: center;
@@ -19,6 +19,14 @@ input {
 
 input:focus {
   outline: none;
+  animation: PulseAttention 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) forwards
+    infinite;
+  caret-color: #ff003c;
+}
+
+input::placeholder {
+  font: 20px/3 sans-serif;
+  color: #ff003c;
 }
 
 button {
@@ -26,8 +34,9 @@ button {
   height: auto;
   height: 2.8rem;
   width: 2.8rem;
-  color: rgba(55, 146, 255, 0.4);
+  color: #ff003c;
   background-color: #000;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
