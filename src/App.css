@@ -4,6 +4,7 @@
   background-color: #000;
   display: grid;
   place-items: center;
+  font-family: "Lato", sans-serif;
 }
 
 .container {
