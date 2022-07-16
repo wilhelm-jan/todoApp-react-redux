@@ -11,8 +11,20 @@
   border-color: #04daf6;
   margin: 2px;
   padding: 5px;
+  flex-flow: row;
+  flex: 1 1 1;
 }
 
 .item-done {
   text-decoration: line-through;
+}
+
+.icn {
+  flex: 1 1 0;
+}
+.name {
+  flex: 1 1 0;
+}
+.btn {
+  flex: 1 1 0;
 }

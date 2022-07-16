@@ -15,19 +15,27 @@ function Item({ todo }) {
   return (
     <div className="item">
       {todo.done ? (
-        <i
-          className="fa-solid fa-square-check"
-          onClick={() => handle("done")}
-        ></i>
+        <div className="icn">
+          <i
+            className="fa-solid fa-square-check"
+            onClick={() => handle("done")}
+          ></i>
+        </div>
       ) : (
-        <i className="fa-solid fa-square" onClick={() => handle("done")}></i>
+        <div className="icn">
+          <i className="fa-solid fa-square" onClick={() => handle("done")}></i>
+        </div>
       )}
-      <p className={todo.done ? "item-done" : ""} id="i">
-        {todo.item}
-      </p>
-      <button>
-        <i className="fa-solid fa-trash" onClick={() => handle("remove")}></i>
-      </button>
+      <div className="name">
+        <p className={todo.done ? "item-done" : ""} id="i">
+          {todo.item}
+        </p>
+      </div>
+      <div className="btn">
+        <button>
+          <i className="fa-solid fa-trash" onClick={() => handle("remove")}></i>
+        </button>
+      </div>
     </div>
   );
 }

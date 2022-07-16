@@ -38,7 +38,9 @@ function Add() {
         value={content}
         onChange={(e) => setContent(e.target.value)}
       />
-      <button onClick={add}>ADD</button>
+      <button onClick={add} disabled={!content && "true"}>
+        ADD
+      </button>
     </div>
   );
 }
