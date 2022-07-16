@@ -22,6 +22,7 @@ function Add() {
     setTimeout(() => {
       setSaving(false);
     }, 2000);
+    setContent("");
   };
 
   useEffect(() => {
@@ -31,7 +32,7 @@ function Add() {
   return (
     <div className="add">
       <input
-        placeholder={content & saving ? "SAVING..." : ""}
+        placeholder={saving ? "SAVING..." : ""}
         ref={inputElement}
         type="text"
         value={content}

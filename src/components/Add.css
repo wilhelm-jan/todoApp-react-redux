@@ -1,6 +1,6 @@
 .add {
   height: 50px;
-  width: 65%;
+  width: 45%;
   border-radius: 12px;
   background-color: #04daf6;
   color: #000;
@@ -15,6 +15,8 @@ input {
   margin-left: 12px;
   flex: 1;
   border-radius: 10px;
+  font: 20px/3 sans-serif;
+  color: #ff003c;
 }
 
 input:focus {

@@ -1,0 +1,16 @@
+.item {
+  height: 50px;
+  width: 100%;
+  border-radius: 12px;
+  background-color: #000;
+  color: #04daf6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-color: #04daf6;
+}
+
+.item-done {
+  text-decoration: line-through;
+}
