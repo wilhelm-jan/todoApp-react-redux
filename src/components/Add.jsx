@@ -12,7 +12,7 @@ function Add() {
         value={content}
         onChange={(e) => setContent(e.target.value)}
       />
-      <button onClick={Add}>Add</button>
+      <button onClick={add}>ADD</button>
     </div>
   );
 }
